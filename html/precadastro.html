@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/pawprint.png" />
+  <link rel="stylesheet" type="text/css" href="../css/global.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/navBar.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/precadastro.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/footer.css" />
+
+  <title>canil osasco</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<!-- NavBar -->
+<header id="header">
+
+  <div class="flex">
+
+    <nav class="menuDesktop">
+
+      <h2 class="nomeDesk">
+        <a href="../index.html">
+          Canil<span class="nomeOsasco">Osasco</span>
+        </a>
+      </h2>
+
+      <ul class="listaNav">
+
+        <li>
+          <a href="../index.html" rel="noopener noreferrer">Home</a>
+        </li>
+
+        <li>
+          <a href="./quemsomos.html" rel="noopener noreferrer">Quem somos</a>
+        </li>
+
+       
+        <li>
+          <a href="html/pets.html" rel="noopener noreferrer">Quero Adotar</a>
+      </li>
+
+        <li>
+          <a href="./voluntarios.html" rel="noopener noreferrer">Voluntário</a>
+        </li>
+
+        <li>
+          <a href="./feiraadocao.html" rel="noopener noreferrer">Feira de Adoção</a>
+        </li>
+
+        <li class="liButton">
+          <button class="button-entrar" type="button" onclick="window.location.href='../php/login.php'">Entrar</button>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <div class="nomeMobilediv">
+      <h2 class="nomeMobile">
+        <a href="../index.html">
+          Canil<span class="nomeOsasco">Osasco</span>
+        </a>
+      </h2>
+
+
+      <div id="menu-hamburguer">
+        <div class="bar"><img src="../img/menu.png" /></div>
+      </div>
+    </div>
+
+    <div id="menu-lateral">
+      <span id="fechar-menu" class="fechar-menu"><img src="../img/close.png" /></span>
+      <ul>
+
+        <li>
+          <div class="button-header">
+            <button type="button">Entrar</button>
+          </div>
+        </li>
+
+        <li>
+          <a href="./quemsomos.html" rel="noopener noreferrer">Quem Somos</a>
+        </li>
+
+        <li>
+          <a href="./doacaopets.html" rel="noopener noreferrer">Quero Adotar</a>
+        </li>
+
+        <li>
+          <a href="./voluntarios.html" rel="noopener noreferrer">Voluntário</a>
+        </li>
+
+        <li>
+          <a href="./politicaprivacdade.html" rel="noopener noreferrer">Política de Privacidade</a>
+        </li>
+
+        <li>
+          <a href="./feiraadocao.html" rel="noopener noreferrer">Feira de Adoção</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</header>
+<!-- NavBar -->
+
+
+<body>
+  <main>
+    <div class="containerdois">
+      <h1>Faça seu Pré Cadastro</h1>
+      <div class="progress-bar">
+        <div class="step">
+          <p>Nome</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Contato</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Data</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Enviar</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="../php/processaPreCad.php" method="post" id="form-cadastro">
+          <div class="page slide-page">
+            <div class="title">Informação básica:</div>
+            <div class="field">
+              <div class="label">Primeiro nome</div>
+              <input  type="text" name="PrimeiroNome" id="PrimeiroNome" required>
+            </div>
+            <div class="field">
+              <div class="label">Sobrenome</div>
+              <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+            <div class="field">
+              <div class="label">CPF:</div>
+              <input  type="text" name="CPF" id="CPF" oninput="mascara(this)" required>
+            </div>
+            <div class="field">
+              <button type="button" class="firstNext next" id="proximo1">Próximo</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Informações de contato</div>
+            <div class="field">
+              <div class="label">Endereço de e-mail</div>
+              <input  type="E-mail" name="E-mail" id="E-mail" required>
+            </div>
+            <div class="field">
+              <div class="label">Número de telefone</div>
+              <input required type="Number" name="TelefoneCelular" id="TelefoneCelular">
+            </div>
+            <div class="field btns">
+              <button type="button" class="prev-1 prev">Anterior</button>
+              <button type="button" class="next-1 next" id="proximo2">Próximo</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="field">
+              <div class="label">CEP</div>
+              <input required type="text" name="CEP" id="CEP">
+            </div>
+            <div class="field">
+              <div class="label">Endereço</div>
+              <input required type="E-mail" name="Endereço" id="Endereco">
+            </div>
+            <div class="field">
+              <div class="label">Numero</div>
+              <input required type="E-mail" name="Numero" id="Numero">
+            </div>
+            <div class="field">
+              <div class="label">Cidade</div>
+              <input required type="E-mail" name="Cidade" id="Cidade">
+            </div>
+            <div class="field">
+              <div class="label">Estado</div>
+              <input required type="E-mail" name="Estado" id="Estado">
+            </div>
+            <div class="field btns">
+              <button type="button" class="prev-2 prev">Anterior</button>
+              <button type="button" class="next-2 next" id="proximo3">Próximo</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Nascimento:</div>
+            <div class="page">
+              <div class="field">
+                <div class="label">Data</div>
+                <input required type="date" name="DataNascimento" id="DataNascimento">
+              </div>
+              <div class="field">
+                <div class="label">Gênero</div>
+                <select name="genero" id="genero" required>
+                  <option value="">Selecione</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Feminino">Feminino</option>
+                  <option value="Outros">Outros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field btns">
+                <button class="prev-3 prev">Anterior</button>
+                <button class="submit" id="enviarButton">Enviar</button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-informacao">
+      <div class="footer-redes-sociais">
+        <h3>Redes sociais</h3>
+
+        <div class="footer-redes-sociais-images">
+          <a href="https://www.instagram.com/canilosasco/"><img src="../img/instagram.png" alt="Instagram"></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5511974157221&text=Quero+adotar+um+animal%21&type=phone_number&app_absent=0"><img
+              src="../img/whatsapp.png" alt="WhatsApp"></a>
+          <img src="../img/gmail.png" alt="Gmail">
+        </div>
+
+      </div>
+
+      <div class="ajuda">
+        <h3>como ajuda?</h3>
+        <ul>
+          <li><a href="./doacaopets.html">quero adotar</a></li>
+          <li><a href="./voluntarios.html">quero ser voluntario</a></li>
+          <li><a href="./feiraadocao.html">onde posso estar adotando ?</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>ficou alguma dúvida?</h3>
+        <ul>
+          <li><a href="./politicaprivacidade.html">Política de privacidade</a></li>
+          <li><a href="./quemsomos.html">Sobre nós</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <p>
+        Projeto Desenvolvido Em Parceria com um grupo de Alunos do 3° Ano do Curso De Desenvolvimento De Sistemas
+        Da
+        ETEC Dr.Celso Giglio
+      </p>
+    </div>
+
+    <div class="footer-dois">
+      <p>&copy; 2023 Canil Osasco. Todos os direitos reservados.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <script src="../java/precadastro.js"></script>
+  <script src="../java/mascara.js"></script>
+  <script src="../java/munu.js"></script>
+</body>
+
+</html>

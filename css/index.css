@@ -1,0 +1,298 @@
+#container {
+    padding-top: 4em;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-us-text {
+    width: 60%;
+
+}
+
+.about-us h2 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    border-bottom: 4px solid #8f8888;
+    width: 12em;
+}
+
+.about-us-text p {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 3em;
+    text-align: justify;
+}
+
+.about-us-image img {
+    height: 24em;
+    width: 24em;
+}
+
+
+
+.about-us .button {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: #569b46;
+    border: 3px solid #569b46;
+    border-radius: 2em;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.about-us .button:hover {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: transparent;
+    border: 3px solid #569b46;
+    border-radius: 2em;
+    color: #569b46;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+.testimonials {
+    text-align: center;
+    padding: 50px;
+}
+
+.testimonials h2 {
+    color: #333;
+}
+
+.testimonials p {
+    color: #666;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    color: #333;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.content-text {
+    flex: 1;
+    text-align: justify;
+}
+
+
+.happy-owners {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.content-image img,
+.happy-owners img,
+.testimonials img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px #569b46;
+    text-align: justify;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.services,
+.about-us,
+.testimonials,
+.cards-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2,
+.about-us h2,
+.testimonials h2,
+.card h2 {
+    color: #333;
+}
+
+.services p,
+.testimonials p,
+.card p {
+    color: #666;
+}
+
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    height: 26em;
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 24px;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+@media screen and (min-width: 64em) {
+
+    .carousel-container {
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 1em;
+    }
+
+    .prev-button {
+        left: 1em;
+    }
+
+    .next-button {
+        right: 1em;
+    }
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-image img,
+.happy-owners img,
+.testimonials img,
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 2em;
+    padding: 0 0 2em 0;
+    border-bottom: 3px solid #666;
+}
+
+.main-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    border-bottom: 4px solid #8f8888;
+    width: 12em;
+}
+
+.main-content p {
+    font-size: 1.2em;
+}
+
+.content-text {
+    flex: 1;
+    max-width: 60%;
+    margin: 3em;
+}
+
+.content-image {
+    flex: 1;
+    max-width: 40%;
+    margin-left: 5em;
+}
+
+
+.content-image img {
+    height: 24em;
+    width: 24em;
+}
+
+.content-image img,
+.happy-owners img,
+.testimonials img,
+.card img {
+    max-width: 100%;
+    height: auto;
+}

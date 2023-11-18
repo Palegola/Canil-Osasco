@@ -1,0 +1,137 @@
+
+@media screen and (min-width: 20em) {
+  .quem-somos-principal {
+    padding-top: 4em;
+  }
+
+  #redes-sociais {
+    display: none;
+  }
+
+  .quem-somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #569b46;
+    margin-bottom: 1em;
+  }
+
+  .quem-somos p {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #569b46;
+    margin-bottom: 0.3em;
+  }
+
+  .quem-somos-nos {
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .quem-somos-paragrafo {
+    margin-bottom: 2em;
+    
+  }
+
+  .quem-somos-paragrafo p {
+    font-size: 1.5em; 
+  }
+
+}
+
+@media screen and (min-width: 48em) {
+  .quem-somos-principal {
+    padding-top: 15em;
+  }
+
+  #redes-sociais {
+    display: none;
+  }
+
+  .quem-somos-paragrafo p {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .quem-somos-principal {
+    padding-top: 4em;
+  }
+
+  #redes-sociais {
+    display: block;
+  }
+
+  .quem-somos-paragrafo p {
+    text-align: justify;
+  }
+}
+
+
+section#redes-sociais {
+  text-align: left;
+}
+
+section#redes-sociais img {
+  width: 3%;
+  margin: 5;
+  border-radius: 3%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0.623);
+  transition: transform .3s, border 1s;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 2vw;
+}
+
+.gallery-items {
+  width: 340px;
+  height: 340px;
+  transform: scale(0.95);
+  border: 10px solid #569b46;
+  border-radius: 1em;
+  box-shadow: 5px 5px 5px #0006;
+  flex-grow: 1;
+  transition: transform .2s ease-in;
+}
+
+.gallery-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5em;
+  /* box-shadow: 10px 5px 5px #312e2e; */
+}
+
+.gallery-items:hover {
+  transform: scale(1);
+}
+
+
+section#redes-sociais {
+  text-align: left;
+}
+
+section#redes-sociais img {
+  width: 3%;
+  margin: 10;
+  border-radius: 3%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0.623);
+  transition: transform .3s, border 1s;
+}
+
+section#menu-social {
+  text-align: left;
+}
+
+section#menu-social img {
+  width: 15%;
+  margin: 5;
+  border-radius: 3%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0.623);
+  transition: transform .3s, border 1s;
+}

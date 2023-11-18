@@ -1,0 +1,214 @@
+* 
+.Adoção h1 {
+    font-family: comic;
+    font-size: 240%;
+    font-weight: 500;
+    color:#746f6f;
+    text-align:center;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+
+}
+
+.pet {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #FFF;
+    flex-grow: 3;
+    transition: transform .5s linear;
+}
+
+.pet img {
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+ .pet:target {
+    position: fixed;
+    width: 30%;
+    height: 70%;
+    top: 15%;
+    left: 48%;
+    padding: 5px 5px 13% 5px;
+    border: solid 2px #333;
+    background-color: white;
+    border-radius: 17px;
+    transform: scale(1.1);
+    font-size: 110%;
+    place-content: 100%;
+    
+}
+.pet:target .detalhes {
+    display: block;
+    border-radius: 30px; 
+    background-color:#ffffff; 
+    padding: 20px; 
+    max-width: 600px; 
+    max-height: fit-content;
+    width: auto;
+    height: 40%;
+    margin: auto; 
+    position: fixed;
+  
+}
+
+.detalhes {
+    display: none;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.texto1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 80%;
+  text-align: center;
+  width: 70%;
+    min-width: 10%;
+    float: right;
+    float: right;
+    left: 75%;
+    
+}
+.texto2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 80%;
+  text-align: center;
+  width: 70%;
+  min-width: 10%;
+  left: 115%;
+
+
+}
+
+.texto1 > .texto2{
+  display: inline-block;
+}
+
+.detalheB a:first-child button {
+  color: #fff; 
+  font-weight: bold; 
+  font-size: 14px; 
+  border: none; 
+  border-radius: 15px ;
+  padding: 3%; 
+  margin-right: 10px; 
+  cursor: pointer; 
+  background-color: #1b663d; 
+  margin-top: 4%;
+  
+    
+}
+.detalheB a:last-child button {
+  color: #fff; 
+  font-weight: bold; 
+  font-size: 14px; 
+  border: none; 
+  border-radius: 15px ;
+  padding: 3%; 
+  margin-right: 10px; 
+  cursor: pointer; 
+  background-color: #1b663d; 
+  margin-top: 4%;
+margin-right: 150%;
+float: left;
+float: left;
+}
+
+
+.container {
+    max-width: 2280px;
+    margin: auto;
+}
+
+#QSM {
+    color: #326127;
+}
+
+#vnv {
+    color: #1b7a05;
+}
+
+
+/* ... (seu código existente) ... */
+
+/* Estilo geral para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .pet {
+      width: 100%; /* Garante que os pets ocupem 100% da largura */
+      height: auto; /* Altura automática para manter a proporção */
+    }
+  
+    .galeria {
+      margin-top: 40px; /* Ajuste da margem superior */
+      padding: 0 10px; /* Ajuste do preenchimento */
+    }
+  
+    .pet:target {
+      width: 80%; /* Ajuste do tamanho do pet quando clicado em dispositivos móveis */
+      left: 10%; /* Centraliza na tela */
+      padding: 5px;
+    }
+  }
+  
+  /* Estilo para tablets e dispositivos menores */
+  @media only screen and (max-width: 1024px) {
+    .pet {
+      width: 48%; 
+    }
+  }
+  
+  /* Estilo para laptops e dispositivos maiores */
+  @media only screen and (min-width: 1025px) {
+    .pet {
+      width: 30%; 
+    }
+  }
+
+
+  .paginação {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas menores */
+  }
+  
+  .pets {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 8px;
+    text-decoration: none;
+    background-color: #569b46;
+    color: #fff;
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .pets:hover {
+    background-color:#569b46;
+    transform: scale(1.1);
+  }
+  
+  /* Adiciona regras de mídia para ajustar o layout em telas menores */
+  @media only screen and (max-width: 600px) {
+    .paginação {
+      flex-direction: column; /* Empilha os botões verticalmente em telas menores */
+      align-items: center;
+    }
+  
+    .pets {
+      margin: 8px 0;
+    }
+  }
